@@ -4,24 +4,17 @@ import HomeCelulas from './components/HomeCelulas';
 import Navbar from './components/nav/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-
 function App() {
   return (
-    <div className="App">
-      <HomeCelulas />
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomeCelulas />} />
+        <Route path="/faq" element={<FAQs />} />
+      </Routes>
       <FAQs />
-
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/components/HomeCelulas' exact element={<HomeCelulas />} />
-           <Route path='/components/FAQs' exact element={<FAQs />} />
-        </Routes>
-      </Router>
-    </div>
+    </Router>
   );
 }
-
-
 
 export default App;

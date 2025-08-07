@@ -126,15 +126,26 @@ function Navbar() {
             }}
             aria-label="Abrir menu"
           >
-            <Link to="#" className="menu-bars">
-                <HamburgerMenuIcon onClick={toggleSidebar} 
-                style={{
-                    width: '1.25rem',
-                    height: '1.25rem',
-                    color: '#4b5563',
-                }}
-                />
-            </Link>
+            <button
+  onClick={toggleSidebar}
+  className="menu-bars"
+  style={{
+    background: 'transparent',
+    border: 'none',
+    cursor: 'pointer',
+    padding: 0,
+  }}
+  aria-label="Abrir menu"
+>
+  <HamburgerMenuIcon
+    style={{
+      width: '1.25rem',
+      height: '1.25rem',
+      color: '#4b5563',
+    }}
+  />
+</button>
+
           </button>
 
           <PersonIcon

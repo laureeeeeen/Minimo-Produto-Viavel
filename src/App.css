@@ -36,9 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-@font-face {
-  font-family: 'Roca';
-  src: url('assets/fonts/roca-two-bold.ttf') format('truetype');
-  font-style: normal;
-}
