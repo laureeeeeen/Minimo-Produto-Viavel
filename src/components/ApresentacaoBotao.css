@@ -1,0 +1,28 @@
+
+.botaoTestem{
+    display: flex;
+    /* justify-content: end; */
+    padding: 1.5vw;
+    width: 20%;
+    height: 10%;
+    top: 1px;
+}
+
+.botaoFacaParte{
+    background-color: #c5d662;  /* cor do botão */
+    color: #393939;               /* cor do texto */
+     padding: 10px 50px;       
+    border: none;               /* sem borda */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 28rem;
+    margin-right: 20rem;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+    /* o "calc(100% - 20px)" cria a ponta da seta */
+    transition: background 0.3s;
+    z-index: 1;
+}
+
+.botaoFacaParte:hover{
+    background-color: #c94e01;
+}
